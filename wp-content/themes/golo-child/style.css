@@ -1,0 +1,191 @@
+/*
+Theme Name: vEats
+Theme URI: https://wp.getgolo.com/
+Author: Sujan Pokhrel
+Author URI: #!
+Version: 1.0.1
+Template: golo
+Text Domain: golo
+Tags: child theme, custom theme, bootstrap
+*/
+
+/* adding child styles */
+
+.elementor-place-search .block-search.layout-02 .location-field .icon-search{
+	background: #ff912c;
+}
+
+.place-item .book-icon-place{
+	line-height: 0;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 32px;
+	height: 32px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	display: flex;
+	background: #4edf97;
+	align-items: center;
+	justify-content: center;
+	color: #ffffff;
+}
+
+.place-item.layout-02 .home-featured .entry-detail{
+	background-color: #f3fff1;
+}
+.place-item.layout-02 .home-featured .place-featured{
+	background-color: #ff912c;
+}
+
+.faqs-section .elementor-toggle .elementor-toggle-item{
+	background-color: #f3fff1;
+	padding: 0 15px;
+}
+
+.wpcf7-form input[type=tel], .wpcf7-form .wpcf7-select {
+	font-size: 15px;
+	border: 1px solid #5d5d5d;
+	padding: 8px 10px 9px;
+	color: #2a2a2a;
+	border-radius: 0;
+}
+
+.team-members .elementor-element .elementor-image-box-content{
+	position: absolute;
+	bottom: 0;
+	padding: 20px;
+}
+
+.form-page .place-manager-form .form-group .form-control, .form-page .place-manager-form .form-group .chosen-choices,
+.form-page  .place-manager-form .form-group.form-select .select2 .select2-selection /*.golo-my-profile .form-group input.form-control*/
+{
+	display: block;
+	width: 100%;
+	font-size: 16px;
+	padding: 9px 10px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 3px;
+	border: 1px solid #bac3c3;
+	background-color: #fff;
+	outline: none;
+	max-height: 40px;
+	height: 40px;
+}
+
+.form-page  .place-manager-form .form-group.form-select .select2 .select2-selection,
+.form-page  .place-manager-form .form-group.form-select .select2 .select2-selection--multiple,
+.become-partner .form-holder{
+	clear: both;
+	overflow: hidden;
+}
+.custom-scrollbar li label {
+	font-size: 13px;
+	font-weight: 500;
+	margin-left: 5px;
+}
+
+.place-fields-title h3 {
+	font-size: 15px;
+	font-weight: 500;
+	color: #2a2a2a;
+	margin-bottom: 8px;
+}
+.place-manager-form .place-fields-wrap .place-fields-title, .place-manager-form .place-fields-wrap .place-fields-title h3,
+.entry-content .contact-form h2, .no-bottom-margin, .partner-us p{
+	margin-bottom: 0;
+}
+.place-manager-form .place-fields-wrap .place-description, .no-top-margin{
+	margin-top: 0;
+}
+
+.golo-form-content h2, .golo-form-content{
+	margin-bottom: 25px;
+}
+.golo-other-content .booking-icons{
+	width: 100px;
+	margin: 20px auto;
+}
+
+.partner-us .col-md-4{
+	padding: 20px 25px;
+}
+
+.partner-us .partner-inner{
+	background-color: #fff;
+	-webkit-box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 10%);
+	box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 10%);
+	border-radius: 3px;
+	padding: 20px;
+	min-height: 100%;
+}
+
+.partner-with-us .elementor-col-33 .elementor-widget-wrap, .services-block .elementor-col-33 .elementor-widget-wrap{
+	background-color: #fff;
+	-webkit-box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 10%);
+	box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 10%);
+}
+
+.content-new-listing .place-manager-form .form-group .form-control, .content-new-listing .place-manager-form .group-field .form-control{
+	height: 40px;
+	border-top: 1px solid #23d3d3;
+	border-left: 1px solid #23d3d3;
+	border-right: 1px solid #23d3d3;
+	border-bottom: 1px solid #23d3d3;
+	padding-left: 10px;
+	padding-top: 5px;
+}
+
+.golo-form-content .desc-image-holder{
+	-webkit-clip-path: polygon(0 25%, 88% 0, 100% 104%, 9% 80%);
+	clip-path: polygon(0 25%, 88% 0, 100% 96%, 9% 80%);
+}
+.listing-testimonials .golo-testimonial-style-02 .testimonial-item{
+	background-color: #f3fff1;
+}
+
+.become-partner .form-holder .form-group {
+	width: 49%;
+	float: left;
+}
+.become-partner .form-holder .form-group:nth-child(2)
+{
+	float: right;
+}
+.become-partner .wpcf7-form .wpcf7-form-control-wrap, .become-partner .wpcf7-form .form-group {
+	margin-top: 20px;
+}
+
+.home .elementor-5073 .elementor-element.elementor-element-697a196a > .elementor-element-populated{
+	box-shadow: none;
+}
+
+.city-item-not-found{
+	font-weight: 600;
+	font-size: 25px;
+}
+
+.place-additional.single-place{
+	float: right;
+}
+.place-additional.single-place .gl-button{
+	background-color: #ff912c;
+}
+
+.this-is-background{
+	background-color: #003337;
+	color: #D6FFCC;
+	background-color: #2C7873;
+	color: #D6FFCC;
+	background-color: #FF912C;
+	color: #F2F9F5;
+	background-color: #D6FFCC;
+	color: #003337;
+	background-color: #52DE97;
+}
