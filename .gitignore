@@ -16,9 +16,9 @@ sitemap.xml.gz
 .csv
  
 # WP dirs.
-wp-admin
-wp-includes
-wp-snapshots
+# wp-admin
+# wp-includes
+# wp-snapshots
  
 # Ignore everything in the wp-content directory, except custom code.
 wp-contentlanguages
