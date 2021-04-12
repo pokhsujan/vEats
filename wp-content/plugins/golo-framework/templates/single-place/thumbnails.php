@@ -117,7 +117,7 @@ $is_global_image_lightbox_enabled = 'yes' === $general_settings_model->get_setti
             	
                 
                 <div class="toggle-social">
-                    <a href="#" class="btn-share">
+                    <a href="#" class="btn-share khatee">
                     	<i class="la la-share-square large"></i>
                     </a>
 
