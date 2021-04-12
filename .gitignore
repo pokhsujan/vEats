@@ -8,12 +8,12 @@ sitemap.xml
 sitemap.xml.gz
  
 # Files in the root.
-.pdf
-.jpg
-.jpeg
-.png
-.txt
-.csv
+#.pdf
+#.jpg
+#.jpeg
+#.png
+#.txt
+#.csv
  
 # WP dirs.
 # wp-admin
@@ -21,14 +21,14 @@ sitemap.xml.gz
 # wp-snapshots
  
 # Ignore everything in the wp-content directory, except custom code.
-wp-contentlanguages
-wp-contentuploads
-wp-contentplugins
-!wp-contentpluginsCUSTOM_PLUGIN_1
-!wp-contentpluginsCUSTOM_PLUGIN_2 # etc.
-wp-contentthemes
-!wp-contentthemesCUSTOM_THEME_1
-!wp-contentthemesCUSTOM_THEME_2 # etc.
+#wp-contentlanguages
+#wp-contentuploads
+#wp-contentplugins
+#!wp-contentpluginsCUSTOM_PLUGIN_1
+#!wp-contentpluginsCUSTOM_PLUGIN_2 # etc.
+#wp-contentthemes
+#!wp-contentthemesCUSTOM_THEME_1
+#!wp-contentthemesCUSTOM_THEME_2 # etc.
  
 # Ignore node dependency directories.
 node_modules
