@@ -52,10 +52,21 @@ function veats_custom_taxanomy_edit($categories){
 //do_action('golo_before_template_part', $template_name, $template_path, $located, $args);
 add_action( 'golo_before_template_part', 'veats_edit_wishlist_listing', 9, 4 );
 function veats_edit_wishlist_listing($template_name, $template_path, $located, $args){
-    if($template_name == 'place/wishlist.php'){
-        ?>
-        <a href="#" class="book-icon-place"><i class="fas fa-utensils"></i></a>
-        <?php
+    if( !is_singular( 'place' ) ){
+        if( isset($args['place_id']) && ($args['place_id'] !='') ){
+            $place_meta_data = get_post_custom( $args['place_id'] );
+//            print_out($place_meta_data);
+            $meta_prefix = GOLO_METABOX_PREFIX;
+            $Orderurl = 'javascript:void(0);';
+            if( isset($place_meta_data[$meta_prefix.'order-up-link']) && !empty($place_meta_data[$meta_prefix.'order-up-link']) ){
+                $Orderurl = $place_meta_data[$meta_prefix.'order-up-link'][0];
+            }
+        }
+        if($template_name == 'place/wishlist.php'){
+            ?>
+            <a href="<?= $Orderurl; ?>" class="book-icon-place"><i class="fas fa-utensils"></i></a>
+            <?php
+        }
     }
 
     //golo_get_template('content-place.php', array('place_id' => $place->ID,'custom_place_image_size' => $custom_image_size));
@@ -71,10 +82,23 @@ function veats_customise_text( $translated_text, $text, $domain ) {
         case "Place Type":
             $translated_text = __( 'Service Type', 'golo-framework' );
             break;
+        case "Add place":
+            $translated_text = __( 'Add Listing', 'golo-framework' );
+            break;
     }
     return $translated_text;
 }
 add_filter( 'gettext', 'veats_customise_text', 20, 3 );
+
+
+//add new menu item called destination in the url
+//add_filter( 'wp_nav_menu_listing-menu_items', 'veats_nav_menu_items', 10, 2 );
+//add_filter( 'wp_nav_menu_items', 'veats_nav_menu_items', 10, 2 );
+function veats_nav_menu_items($items, $args){
+    $homelink = '<li class="home"><a href="#">' . __('Naya') . '</a></li>';
+    $items = $items . $homelink;
+    return $items;
+}
 
 
 function format_display($value, $bool=false){
