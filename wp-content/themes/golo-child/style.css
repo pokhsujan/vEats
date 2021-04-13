@@ -185,12 +185,15 @@ Tags: child theme, custom theme, bootstrap
 	background-color: #52DE97;
 }
 
-.place-additional.single-place .gl-button, .orderup-link .gl-button, .site-header .golo-button a, .golo-button a, body .golo-button a{
+.place-additional.single-place .gl-button, .orderup-link .gl-button,
+.site-header .golo-button a, .golo-button a, body .golo-button a,
+.wpcf7-submit, .wpcf7-form .wpcf7-submit{
 	background-color: #ff912c;
 	border-color: #ff912c
 }
 
-.place-additional.single-place .gl-button:hover, .orderup-link .gl-button:hover{
+.place-additional.single-place .gl-button:hover, .orderup-link .gl-button:hover,
+.wpcf7-form .wpcf7-submit:hover{
 	background-color: #52DE97;
 	border-color: #52DE97;
 	color: #ffffff;
