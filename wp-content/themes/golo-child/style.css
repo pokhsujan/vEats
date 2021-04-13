@@ -228,7 +228,7 @@ Tags: child theme, custom theme, bootstrap
 }
 
 @media only screen and (max-width: 520px) {
-	.home .truong .elementor-element.offset-item > .elementor-widget-container {
+	.home .truong .elementor-widget-golo-heading.offset-item .elementor-widget-container {
 		margin-top: 15px;
 		margin-left: 25px;
 	}
