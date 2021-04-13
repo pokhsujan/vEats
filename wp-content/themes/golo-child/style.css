@@ -202,6 +202,10 @@ Tags: child theme, custom theme, bootstrap
 	background-color: #ff912c;
 }
 
+.become-our-partner .elementor-button{
+	width: 30%;
+}
+
 @media only screen and (min-width: 641px) {
 	.place-title.single-listing-page{
 		position: relative;
@@ -217,5 +221,8 @@ Tags: child theme, custom theme, bootstrap
 @media only screen and (max-width: 640px) {
 	.place-title.single-listing-page .orderup-link{
 		margin: 10px 0 15px 0;
+	}
+	.become-our-partner .elementor-button{
+		width: 30%;
 	}
 }
