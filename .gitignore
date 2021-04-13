@@ -2,6 +2,7 @@
 # Configuration.
 .htaccess
 wp-config.php
+/wp-config.php
  
 # Sitemap files.
 sitemap.xml
