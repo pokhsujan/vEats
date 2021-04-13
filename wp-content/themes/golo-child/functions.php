@@ -1,32 +1,34 @@
 <?php
 // Exit if accessed directly
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
+if (!defined('ABSPATH')) {
+    exit;
 }
 
 /**
  * Enqueue child scripts
  */
-add_action( 'wp_enqueue_scripts', 'golo_child_enqueue_scripts' );
-if ( ! function_exists( 'golo_child_enqueue_scripts' ) ) {
+add_action('wp_enqueue_scripts', 'golo_child_enqueue_scripts');
+if (!function_exists('golo_child_enqueue_scripts')) {
 
-	function golo_child_enqueue_scripts() {
-		wp_enqueue_style( 'golo_child-style', trailingslashit( get_stylesheet_directory_uri() ) . 'style.css' );
-		wp_enqueue_script( 'golo_child-script', trailingslashit( get_stylesheet_directory_uri() ) . 'script.js', array( 'jquery' ), null, true );
+    function golo_child_enqueue_scripts()
+    {
+        wp_enqueue_style('golo_child-style', trailingslashit(get_stylesheet_directory_uri()) . 'style.css');
+        wp_enqueue_script('golo_child-script', trailingslashit(get_stylesheet_directory_uri()) . 'script.js', array('jquery'), null, true);
 
-        if( is_page('new-place') ){
-            wp_enqueue_style( 'veats-bootstrap-style', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' );
-            wp_enqueue_script( 'veats-bootstrap-script', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', array( 'jquery' ), null, true );
+        if (is_page('new-place')) {
+            wp_enqueue_style('veats-bootstrap-style', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+            wp_enqueue_script('veats-bootstrap-script', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', array('jquery'), null, true);
         }
-	}
+    }
 
 }
 
 //rename custom post type using filter hooks
-add_filter( 'glf_register_post_type' , 'veats_custom_post_edit');
-function veats_custom_post_edit($restaurants) {
+add_filter('glf_register_post_type', 'veats_custom_post_edit');
+function veats_custom_post_edit($restaurants)
+{
 
-    if( !empty($restaurants) && isset($restaurants['place']) ){
+    if (!empty($restaurants) && isset($restaurants['place'])) {
         $restaurants['place']['label'] = "Restaurants";
         $restaurants['place']['singular_name'] = "Restaurant";
     }
@@ -34,12 +36,13 @@ function veats_custom_post_edit($restaurants) {
 }
 
 //rename the custom taxonomy for place
-add_filter( 'glf_register_taxonomy' , 'veats_custom_taxanomy_edit');
-function veats_custom_taxanomy_edit($categories){
-    if( isset($categories['place-type']) ){
+add_filter('glf_register_taxonomy', 'veats_custom_taxanomy_edit');
+function veats_custom_taxanomy_edit($categories)
+{
+    if (isset($categories['place-type'])) {
         $categories['place-type']['singular_name'] = "Service Type";
     }
-    if( isset($categories['place-amenities']) ){
+    if (isset($categories['place-amenities'])) {
         $categories['place-amenities']['label'] = "Classifications";
         $categories['place-amenities']['singular_name'] = "Classification";
         $categories['place-amenities']['rewrite']['slug'] = "classification";
@@ -50,23 +53,24 @@ function veats_custom_taxanomy_edit($categories){
 
 
 //do_action('golo_before_template_part', $template_name, $template_path, $located, $args);
-add_action( 'golo_before_template_part', 'veats_edit_wishlist_listing', 9, 4 );
-function veats_edit_wishlist_listing($template_name, $template_path, $located, $args){
-    if( !is_singular( 'place' ) ){
-        if( isset($args['place_id']) && ($args['place_id'] !='') ){
-            $place_meta_data = get_post_custom( $args['place_id'] );
+add_action('golo_before_template_part', 'veats_edit_wishlist_listing', 9, 4);
+function veats_edit_wishlist_listing($template_name, $template_path, $located, $args)
+{
+    if (isset($args['place_id']) && ($args['place_id'] != '')) {
+        $place_meta_data = get_post_custom($args['place_id']);
 //            print_out($place_meta_data);
-            $meta_prefix = GOLO_METABOX_PREFIX;
-            $Orderurl = 'javascript:void(0);';
-            if( isset($place_meta_data[$meta_prefix.'order-up-link']) && !empty($place_meta_data[$meta_prefix.'order-up-link']) ){
-                $Orderurl = $place_meta_data[$meta_prefix.'order-up-link'][0];
-            }
+        $meta_prefix = GOLO_METABOX_PREFIX;
+        $Orderurl = 'javascript:void(0);';
+        if (isset($place_meta_data[$meta_prefix . 'order-up-link']) && !empty($place_meta_data[$meta_prefix . 'order-up-link'])) {
+            $Orderurl = $place_meta_data[$meta_prefix . 'order-up-link'][0];
         }
-        if($template_name == 'place/wishlist.php'){
+    }
+    if ($template_name == 'place/wishlist.php') {
+        //if (!is_singular('place')) {
             ?>
             <a href="<?= $Orderurl; ?>" class="book-icon-place"><i class="fas fa-utensils"></i></a>
             <?php
-        }
+        //}
     }
 
     //golo_get_template('content-place.php', array('place_id' => $place->ID,'custom_place_image_size' => $custom_image_size));
@@ -74,36 +78,40 @@ function veats_edit_wishlist_listing($template_name, $template_path, $located, $
 
 
 /* Change Text Site Wide */
-function veats_customise_text( $translated_text, $text, $domain ) {
-    switch ($translated_text){
+function veats_customise_text($translated_text, $text, $domain)
+{
+    switch ($translated_text) {
         case "Amenities":
-            $translated_text = __( 'Classification', 'golo-framework' );
+            $translated_text = __('Classification', 'golo-framework');
             break;
         case "Place Type":
-            $translated_text = __( 'Service Type', 'golo-framework' );
+            $translated_text = __('Service Type', 'golo-framework');
             break;
         case "Add place":
-            $translated_text = __( 'Add Listing', 'golo-framework' );
+            $translated_text = __('Add Listing', 'golo-framework');
             break;
     }
     return $translated_text;
 }
-add_filter( 'gettext', 'veats_customise_text', 20, 3 );
+
+add_filter('gettext', 'veats_customise_text', 20, 3);
 
 
 //add new menu item called destination in the url
 //add_filter( 'wp_nav_menu_listing-menu_items', 'veats_nav_menu_items', 10, 2 );
 //add_filter( 'wp_nav_menu_items', 'veats_nav_menu_items', 10, 2 );
-function veats_nav_menu_items($items, $args){
+function veats_nav_menu_items($items, $args)
+{
     $homelink = '<li class="home"><a href="#">' . __('Naya') . '</a></li>';
     $items = $items . $homelink;
     return $items;
 }
 
 
-function format_display($value, $bool=false){
+function format_display($value, $bool = false)
+{
     echo '<pre>';
     print_r($value);
     echo '</pre>';
-    if( $bool ) die('_ END _');
+    if ($bool) die('_ END _');
 }
