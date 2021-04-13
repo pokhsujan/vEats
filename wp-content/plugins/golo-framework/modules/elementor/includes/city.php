@@ -346,7 +346,13 @@ class Widget_City extends Widget_Base {
 						<span class="entry-detail">
 							<h3 class="entry-title"><?php echo esc_html($city->name); ?></h3>
 							<?php if( $count_items == 'yes' ) : ?>
-							<span class="entry-count"><?php printf( _n( '%s place', '%s places', $term_count, 'golo-framework' ), esc_html( $term_count ) ); ?></span>
+							<span class="entry-count">
+                                <?php if($term_count == 0){?>
+                                    Comming Soon!
+                                <?php }else{ ?>
+                                <?php printf( _n( '%s place', '%s places', $term_count, 'golo-framework' ), esc_html( $term_count ) ); ?>
+                                <?php } ?>
+                            </span>
 							<?php endif; ?>
 						</span>
 					</a>
