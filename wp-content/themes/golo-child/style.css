@@ -39,9 +39,6 @@ Tags: child theme, custom theme, bootstrap
 .place-item.layout-02 .home-featured .entry-detail{
 	background-color: #f3fff1;
 }
-.place-item.layout-02 .home-featured .place-featured{
-	background-color: #ff912c;
-}
 
 .faqs-section .elementor-toggle .elementor-toggle-item{
 	background-color: #f3fff1;
@@ -174,9 +171,6 @@ Tags: child theme, custom theme, bootstrap
 .place-additional.single-place{
 	float: right;
 }
-.place-additional.single-place .gl-button{
-	background-color: #ff912c;
-}
 
 
 .this-is-background{
@@ -189,4 +183,36 @@ Tags: child theme, custom theme, bootstrap
 	background-color: #D6FFCC;
 	color: #003337;
 	background-color: #52DE97;
+}
+
+.place-additional.single-place .gl-button, .orderup-link .gl-button, .site-header .golo-button a, .golo-button a, body .golo-button a{
+	background-color: #ff912c;
+	border-color: #ff912c
+}
+
+.place-additional.single-place .gl-button:hover, .orderup-link .gl-button:hover{
+	background-color: #52DE97;
+	border-color: #52DE97;
+	color: #ffffff;
+}
+.block-search.layout-02 .location-field .icon-search, .place-item.layout-02 .home-featured .place-featured{
+	background-color: #ff912c;
+}
+
+@media only screen and (min-width: 641px) {
+	.place-title.single-listing-page{
+		position: relative;
+	}
+
+	.place-title.single-listing-page .orderup-link{
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.place-title.single-listing-page .orderup-link{
+		margin: 10px 0 15px 0;
+	}
 }

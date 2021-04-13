@@ -17,14 +17,6 @@ $additional_fields = golo_render_additional_fields();
                         foreach ($additional_fields as $key => $field):
                             $place_field = get_post_meta($place_id, $field['id'], true);
                             if (!empty($place_field)):
-
-                                if( $field['id'] == 'golo-order-up-link' ){
-                                    ?>
-                                    <div class="float-right">
-                                        <a class="btn gl-button" href ="<?php echo $place_field; ?>">Order </a>
-                                    </div>
-                                    <?php
-                                }
                                 ?>
 
 
