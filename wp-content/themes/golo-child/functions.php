@@ -118,3 +118,8 @@ function format_display($value, $bool = false)
     echo '</pre>';
     if ($bool) die('_ END _');
 }
+
+//increase file upload size
+@ini_set( 'upload_max_size' , '32M' );
+@ini_set( 'post_max_size', '32M');
+@ini_set( 'max_execution_time', '300' );
