@@ -160,7 +160,7 @@ if (!is_array($hide_place_group_fields)) {
             </div>
             <div class="col-md-4">
                 <div class="desc-image-holder">
-                    <img src="<?=get_stylesheet_directory_uri();?>/uploads/images/connect.jpg">
+                    <img src="<?=get_stylesheet_directory_uri();?>/assets/images/connect.jpg">
                 </div>
             </div>
         </div>
@@ -173,21 +173,21 @@ if (!is_array($hide_place_group_fields)) {
 <!--                <div class="col-md-4">-->
 <!--                    <div class="partner-inner">-->
 <!--                        <p><b>Increase Booking</b></p>-->
-<!--                        <img src="--><?//=get_stylesheet_directory_uri();?><!--/uploads/images/mobile-payment-2.png" class="booking-icons">-->
+<!--                        <img src="--><?//=get_stylesheet_directory_uri();?><!--/assets/images/mobile-payment-2.png" class="booking-icons">-->
 <!--                        <p>Join a well-oiled marketing machine and watch the orders come in through your door and online.</p>-->
 <!--                    </div>-->
 <!--                </div>-->
 <!--                <div class="col-md-4">-->
 <!--                    <div class="partner-inner">-->
 <!--                        <p><b>Increase takeaway orders</b></p>-->
-<!--                        <img src="--><?//=get_stylesheet_directory_uri();?><!--/uploads/images/delivery.png" class="booking-icons">-->
+<!--                        <img src="--><?//=get_stylesheet_directory_uri();?><!--/assets/images/delivery.png" class="booking-icons">-->
 <!--                        <p>Join a well-oiled marketing machine and watch the orders come in through your door and online.</p>-->
 <!--                    </div>-->
 <!--                </div>-->
 <!--                <div class="col-md-4">-->
 <!--                    <div class="partner-inner">-->
 <!--                        <p><b>Reach new growing audiences</b></p>-->
-<!--                        <img src="--><?//=get_stylesheet_directory_uri();?><!--/uploads/images/images.png" class="booking-icons">-->
+<!--                        <img src="--><?//=get_stylesheet_directory_uri();?><!--/assets/images/images.png" class="booking-icons">-->
 <!--                        <p>Join a well-oiled marketing machine and watch the orders come in through your door and online.</p>-->
 <!--                    </div>-->
 <!--                </div>-->

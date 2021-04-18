@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand-Regular.eot');
+    src: local('../fonts/Quicksand Regular'), local('Quicksand-Regular'),
+    url('../fonts/Quicksand-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Quicksand-Regular.woff2') format('woff2'),
+    url('../fonts/Quicksand-Regular.woff') format('woff'),
+    url('../fonts/Quicksand-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand-Bold.eot');
+    src: local('../fonts/Quicksand Bold'), local('Quicksand-Bold'),
+    url('../fonts/Quicksand-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Quicksand-Bold.woff2') format('woff2'),
+    url('../fonts/Quicksand-Bold.woff') format('woff'),
+    url('../fonts/Quicksand-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Nimbus Sans';
+    src: url('../fonts/NimbusSanL-Reg.eot');
+    src: local('Nimbus Sans Regular'), local('NimbusSanL-Reg'),
+    url('../fonts/NimbusSanL-Reg.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NimbusSanL-Reg.woff2') format('woff2'),
+    url('../fonts/NimbusSanL-Reg.woff') format('woff'),
+    url('../fonts/NimbusSanL-Reg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nimbus Sans';
+    src: url('../fonts/NimbusSanL-Bol.eot');
+    src: local('Nimbus Sans Bold'), local('NimbusSanL-Bol'),
+    url('../fonts/NimbusSanL-Bol.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NimbusSanL-Bol.woff2') format('woff2'),
+    url('../fonts/NimbusSanL-Bol.woff') format('woff'),
+    url('../fonts/NimbusSanL-Bol.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
