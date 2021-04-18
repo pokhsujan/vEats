@@ -204,6 +204,10 @@ Tags: child theme, custom theme, bootstrap
 	width: 30%;
 }
 
+.site-header .mb-menu.canvas-menu .la-bars{
+	font-size: 32px;
+}
+
 @media only screen and (min-width: 641px) {
 	.place-title.single-listing-page{
 		position: relative;
