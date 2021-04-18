@@ -188,18 +188,18 @@ Tags: child theme, custom theme, bootstrap
 .place-additional.single-place .gl-button, .orderup-link .gl-button,
 .site-header .golo-button a, .golo-button a, body .golo-button a,
 .wpcf7-submit, .wpcf7-form .wpcf7-submit{
-	background-color: #ff912c;
-	border-color: #ff912c
+	background-color: #003337;
+	border-color: #003337
 }
 
 .place-additional.single-place .gl-button:hover, .orderup-link .gl-button:hover,
 .wpcf7-form .wpcf7-submit:hover{
-	background-color: #52DE97;
-	border-color: #52DE97;
+	background-color: #ff912c;
+	border-color: #ff912c;
 	color: #ffffff;
 }
 .block-search.layout-02 .location-field .icon-search, .place-item.layout-02 .home-featured .place-featured{
-	background-color: #ff912c;
+	background-color: #003337;
 }
 
 .elementor-align-center.become-our-partner .elementor-button{
@@ -227,6 +227,7 @@ Tags: child theme, custom theme, bootstrap
 	}
 }
 
+/*media style for max size 520*/
 @media only screen and (max-width: 520px) {
 	.home .truong .elementor-widget-golo-heading.offset-item .elementor-widget-container {
 		margin-top: 15px;
