@@ -12,6 +12,7 @@ if (!function_exists('golo_child_enqueue_scripts')) {
 
     function golo_child_enqueue_scripts()
     {
+        wp_enqueue_style('golo_child-fonts', trailingslashit(get_stylesheet_directory_uri()) . 'assets/css/child-fonts.css');
         wp_enqueue_style('golo_child-style', trailingslashit(get_stylesheet_directory_uri()) . 'style.css');
         wp_enqueue_script('golo_child-script', trailingslashit(get_stylesheet_directory_uri()) . 'script.js', array('jquery'), null, true);
 

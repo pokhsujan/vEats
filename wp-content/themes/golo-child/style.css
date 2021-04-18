@@ -208,6 +208,12 @@ Tags: child theme, custom theme, bootstrap
 	font-size: 32px;
 }
 
+.orderup-link .gl-button{
+	padding: 13px 30px;
+	font-size: 18px;
+	border-radius: 25px;
+}
+
 @media only screen and (min-width: 641px) {
 	.place-title.single-listing-page{
 		position: relative;
