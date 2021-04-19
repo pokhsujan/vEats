@@ -233,11 +233,11 @@ body, span, a, p, div, body a, body span, body div, body p {
 	font-size: 18px;
 	border-radius: 25px;
 }
-.canvas-left .block-search.search-input .input-search{
+.left-header .block-search.search-input .input-search{
 	border: 1px solid #d8d8d8;
 	border-radius: 15px;
 }
-.canvas-left .block-search.search-input .icon-search{
+.left-header .block-search.search-input .icon-search{
 	right: 10px;
 	width: 40px;
 	height: 40px;
