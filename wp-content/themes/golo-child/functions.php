@@ -94,6 +94,9 @@ function veats_customise_text($translated_text, $text, $domain)
         case "Add place":
             $translated_text = __('Add Listing', 'golo-framework');
             break;
+        case "Type a city or location":
+            $translated_text = __('Search City or Restaurant', 'golo-framework');
+            break;
     }
     return $translated_text;
 }
