@@ -44,7 +44,7 @@ if (!is_array($hide_place_group_fields)) {
         $action = 'add_place';
         ?>
 
-        <h2><?php esc_html_e('Add new Listing', 'golo-framework'); ?></h2>
+        <h2><?php esc_html_e('List Your Restaurant', 'golo-framework'); ?></h2>
         <div class="row">
             <div class="col-md-8">
                 <form action="#" method="post" id="submit_place_form" class="place-manager-form" enctype="multipart/form-data" data-titleerror="<?php echo esc_html__('Please enter place name', 'golo-framework'); ?>" data-deserror="<?php echo esc_html__('Please enter place description', 'golo-framework'); ?>" data-caterror="<?php echo esc_html__('Please choosen category', 'golo-framework'); ?>" data-typeerror="<?php echo esc_html__('Please choosen type', 'golo-framework'); ?>" data-maperror="<?php echo esc_html__('Please enter place address', 'golo-framework'); ?>" data-imgerror="<?php echo esc_html__('Please upload featured image', 'golo-framework'); ?>">
