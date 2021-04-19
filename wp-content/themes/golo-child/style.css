@@ -133,10 +133,10 @@ body, span, a, p, div, body a, body span, body div, body p {
 
 .content-new-listing .place-manager-form .form-group .form-control, .content-new-listing .place-manager-form .group-field .form-control{
 	height: 40px;
-	border-top: 1px solid #23d3d3;
-	border-left: 1px solid #23d3d3;
-	border-right: 1px solid #23d3d3;
-	border-bottom: 1px solid #23d3d3;
+	/*border-top: 1px solid #23d3d3;*/
+	/*border-left: 1px solid #23d3d3;*/
+	/*border-right: 1px solid #23d3d3;*/
+	/*border-bottom: 1px solid #23d3d3;*/
 	padding-left: 10px;
 	padding-top: 5px;
 }
