@@ -218,7 +218,10 @@ body, span, a, p, div, body a, body span, body div, body p {
 	border-radius: 50%;
 	justify-content: center;
 	text-align: center;
-	right: 20px;
+	right: 10px;
+	display: flex;
+	color: #ffffff;
+	align-items: center;
 }
 .elementor-align-center.become-our-partner .elementor-button{
 	width: 30%;
@@ -236,6 +239,7 @@ body, span, a, p, div, body a, body span, body div, body p {
 .left-header .block-search.search-input .input-search{
 	border: 1px solid #d8d8d8;
 	border-radius: 15px;
+	padding: 11px 25px 10px 34px;
 }
 .left-header .block-search.search-input .icon-search{
 	right: 10px;
@@ -243,6 +247,10 @@ body, span, a, p, div, body a, body span, body div, body p {
 	height: 40px;
 	border-radius: 50%;
 	color: #ffffff;
+	background-color: #52de97;
+	align-items: center;
+	justify-content: center;
+	display: flex;
 }
 
 @media only screen and (min-width: 641px) {
