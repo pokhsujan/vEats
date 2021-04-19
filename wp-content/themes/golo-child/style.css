@@ -206,6 +206,17 @@ body, span, a, p, div, body a, body span, body div, body p {
 	background-color: #52de97;
 }
 
+.elementor-place-search .block-search.layout-01 .area-search .icon-search {
+	z-index: 1;
+	left: auto;
+	background: #52de97;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	justify-content: center;
+	text-align: center;
+	right: 20px;
+
 .elementor-align-center.become-our-partner .elementor-button{
 	width: 30%;
 }
