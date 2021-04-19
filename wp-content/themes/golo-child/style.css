@@ -17,6 +17,9 @@ body, span, a, p, div, body a, body span, body div, body p {
 	font-size: 15px;
 }
 
+.place-title a{
+	font-weight: bold;
+}
 .place-item .book-icon-place{
 	line-height: 0;
 	position: absolute;
@@ -229,6 +232,16 @@ body, span, a, p, div, body a, body span, body div, body p {
 	padding: 13px 30px;
 	font-size: 18px;
 	border-radius: 25px;
+}
+.canvas-left .block-search.search-input .input-search{
+	border: 1px solid #d8d8d8;
+	border-radius: 15px;
+}
+.canvas-left .block-search.search-input .icon-search{
+	right: 10px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
 }
 
 @media only screen and (min-width: 641px) {
