@@ -240,6 +240,7 @@ body, span, a, p, div, body a, body span, body div, body p {
 	}
 }
 
+
 /*media style for max size 520*/
 @media only screen and (max-width: 520px) {
 	.home .truong .elementor-widget-golo-heading.offset-item .elementor-widget-container {
