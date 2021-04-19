@@ -23,10 +23,10 @@
 define( 'DB_NAME', 'testwp' );
 
 /** MySQL database username */
-define( 'DB_USER', 'root' );
+define( 'DB_USER', 'remotedeveloper' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', '' );
+define( 'DB_PASSWORD', 'SujanSql@2021#' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );
@@ -85,6 +85,8 @@ define( 'WP_DEBUG', false );
 if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', __DIR__ . '/' );
 }
+
+define('FS_METHOD', 'direct');
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
