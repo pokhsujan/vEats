@@ -11,6 +11,11 @@ Tags: child theme, custom theme, bootstrap
 
 /* adding child styles */
 
+body, span, a, p, div, body a, body span, body div, body p {
+	font-family: "Nimbus Sans";
+	font-weight: normal;
+	font-size: 15px;
+}
 
 .place-item .book-icon-place{
 	line-height: 0;
@@ -169,7 +174,7 @@ Tags: child theme, custom theme, bootstrap
 	float: right;
 }
 
-
+/*site colo scheme */
 .this-is-background{
 	background-color: #003337;
 	color: #D6FFCC;
@@ -182,22 +187,23 @@ Tags: child theme, custom theme, bootstrap
 	background-color: #52DE97;
 }
 
+
 .place-additional.single-place .gl-button, .orderup-link .gl-button,
-.site-header .golo-button a, .golo-button a, body .golo-button a,
+.site-header .golo-button a, .golo-button a,
 .wpcf7-submit, .wpcf7-form .wpcf7-submit{
-	background-color: #003337;
-	border-color: #003337
+	background-color: #52de97;
+	border-color: #52de97
 }
 
 .place-additional.single-place .gl-button:hover, .orderup-link .gl-button:hover,
-.wpcf7-form .wpcf7-submit:hover{
-	background-color: #ff912c;
-	border-color: #ff912c;
+.wpcf7-form .wpcf7-submit:hover, body .golo-button a:hover{
+	background-color: #003337;
+	border-color: #003337;
 	color: #ffffff;
 }
 .block-search.layout-02 .location-field .icon-search, .place-item.layout-02 .home-featured .place-featured,
 .elementor-place-search .block-search.layout-02 .location-field .icon-search{
-	background-color: #003337;
+	background-color: #52de97;
 }
 
 .elementor-align-center.become-our-partner .elementor-button{
@@ -234,6 +240,7 @@ Tags: child theme, custom theme, bootstrap
 		width: 100%;
 	}
 }
+
 
 /*media style for max size 520*/
 @media only screen and (max-width: 520px) {
