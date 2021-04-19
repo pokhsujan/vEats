@@ -120,6 +120,14 @@ function format_display($value, $bool = false)
     if ($bool) die('_ END _');
 }
 
+//adding shortcode for elementor
+function veats_search_from_cities(){
+    ob_start();?>
+    <?php
+    echo ob_get_clean();
+}
+
+
 //increase file upload size
 @ini_set( 'upload_max_size' , '32M' );
 @ini_set( 'post_max_size', '32M');
