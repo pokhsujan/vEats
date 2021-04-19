@@ -203,8 +203,7 @@ body, span, a, p, div, body a, body span, body div, body p {
 }
 .block-search.layout-02 .location-field .icon-search, .place-item.layout-02 .home-featured .place-featured,
 .elementor-place-search .block-search.layout-02 .location-field .icon-search,
-.block-search .area-search .icon-search, .elementor-place-search .block-search .area-search .icon-search,
-.block-search.layout-01 .area-search .icon-search, .elementor-place-search .block-search.layout-01 .area-search .icon-search{
+.block-search .area-search .icon-search, .elementor-place-search .block-search .location-field .icon-search{
 	background-color: #52de97;
 }
 
