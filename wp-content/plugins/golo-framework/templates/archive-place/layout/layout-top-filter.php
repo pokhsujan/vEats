@@ -44,7 +44,7 @@ $location_check_id = get_term_by('name', $key, 'place-city');
 
 $tax_query = array();
 $args = array(
-    'posts_per_page'      => -1,
+    'posts_per_page'      => $archive_place_items_amount,
     'post_type'           => 'place',
     'ignore_sticky_posts' => 1,
     'post_status'         => 'publish',
