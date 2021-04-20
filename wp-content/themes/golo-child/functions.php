@@ -126,6 +126,113 @@ function format_display($value, $bool = false)
     if ($bool) die('_ END _');
 }
 
+//get store open or close status
+function golo_status_time_place($storeSchedule)
+{
+    $class = '';
+
+    // default status
+    $status = sprintf( esc_html__( '%s Closed', 'golo-framework' ), '<i class="las la-door-closed icon-large"></i>' );
+
+    $tzstring = get_option( 'timezone_string' );
+    $offset   = get_option( 'gmt_offset' );
+
+    $enable_time_format_24 = golo_get_option('enable_time_format_24', 0);
+
+    if( empty( $tzstring ) && 0 != $offset && floor( $offset ) == $offset ){
+        $offset_st = $offset > 0 ? "-$offset" : '+'.absint( $offset );
+        $tzstring  = 'Etc/GMT'.$offset_st;
+    }
+
+    //Issue with the timezone selected, set to 'UTC'
+    if( empty( $tzstring ) ){
+        $tzstring = 'UTC';
+    }
+
+    $timezone = new DateTimeZone( $tzstring );
+
+    // current or user supplied UNIX timestamp
+    $dt = current_datetime();
+    $timestamp = strtotime($dt->format("Y-m-d H:i:s"));
+
+    $current_day = date('D', $timestamp);
+
+    $arr = $storeSchedule[$current_day];
+
+    if( !$arr ) {
+        return;
+    }
+
+    if (strpos($arr, '&') != false) {
+        $arr = str_replace( '&', '-', $arr );
+    }
+
+    $arr = explode('-', $arr);
+
+    // get current time object
+    $currentTime = DateTime::createFromFormat('H:i:s', $dt->format("H:i:s"), new DateTimeZone($tzstring));;
+
+    if( !empty($arr[0]) && !empty($arr[1]) ) {
+        $arr[0] = trim($arr[0]);
+        $arr[1] = trim($arr[1]);
+
+        if ($enable_time_format_24 == 1) {
+            $startTime = DateTime::createFromFormat('H:i', $arr[0], new DateTimeZone($tzstring));
+            $endTime   = DateTime::createFromFormat('H:i', $arr[1], new DateTimeZone($tzstring));
+        } else {
+            $startTime = DateTime::createFromFormat('h:i A', $arr[0], new DateTimeZone($tzstring));
+            $endTime   = DateTime::createFromFormat('h:i A', $arr[1], new DateTimeZone($tzstring));
+        }
+
+        if ($endTime < $currentTime) {
+            if( !empty($arr[2]) && !empty($arr[3]) ) {
+                $arr[2] = trim($arr[2]);
+                $arr[3] = trim($arr[3]);
+
+                if ($enable_time_format_24 == 1) {
+                    $startTime = DateTime::createFromFormat('H:i', $arr[2], new DateTimeZone($tzstring));
+                    $endTime   = DateTime::createFromFormat('H:i', $arr[3], new DateTimeZone($tzstring));
+                } else {
+                    $startTime = DateTime::createFromFormat('h:i A', $arr[2], new DateTimeZone($tzstring));
+                    $endTime   = DateTime::createFromFormat('h:i A', $arr[3], new DateTimeZone($tzstring));
+                }
+
+                // check if current time is within a range
+                if ( ( $startTime < $endTime ) && ($startTime < $currentTime) && ($currentTime < $endTime) ) {
+                    $class  = 'open';
+                    $status = sprintf( esc_html__( '%s Open now', 'golo-framework' ), '<i class="las la-door-open icon-large"></i>' );
+                } else if ( ( $startTime > $endTime ) && (($startTime < $currentTime) || ($currentTime < $endTime)) ) {
+                    $class  = 'open';
+                    $status = sprintf( esc_html__( '%s Open now', 'golo-framework' ), '<i class="las la-door-open icon-large"></i>' );
+                } else {
+                    $class  = 'close';
+                    $status = sprintf( esc_html__( '%s Closed', 'golo-framework' ), '<i class="las la-door-closed icon-large"></i>' );
+                }
+            } else {
+                $class  = 'close';
+                $status = sprintf( esc_html__( '%s Closed', 'golo-framework' ), '<i class="las la-door-closed icon-large"></i>' );
+            }
+        } else {
+            if ( ( $startTime < $endTime ) && ($startTime < $currentTime) && ($currentTime < $endTime) ) {
+                $class  = 'open';
+                $status = sprintf( esc_html__( '%s Open now', 'golo-framework' ), '<i class="las la-door-open icon-large"></i>' );
+            } else if ( ( $startTime > $endTime ) && (($startTime < $currentTime) || ($currentTime < $endTime)) ) {
+                $class  = 'open';
+                $status = sprintf( esc_html__( '%s Open now', 'golo-framework' ), '<i class="las la-door-open icon-large"></i>' );
+            } else {
+                $class  = 'close';
+                $status = sprintf( esc_html__( '%s Closed', 'golo-framework' ), '<i class="las la-door-closed icon-large"></i>' );
+            }
+        }
+
+    } else {
+        $class  = 'close';
+        $status = sprintf( esc_html__( '%s Closed', 'golo-framework' ), '<i class="las la-door-closed icon-large"></i>' );
+    }
+
+    return '<div class="place-status ">' . $status . '</div>';
+}
+
 //adding shortcode for elementor
 function veats_search_from_cities(){
     ob_start();?>
