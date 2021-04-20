@@ -257,6 +257,9 @@ body, span, a, p, div, body a, body span, body div, body p {
 	justify-content: center;
 	display: flex;
 }
+.place-item.layout-02 .place-title, {
+
+}
 
 @media only screen and (min-width: 641px) {
 	.place-title.single-listing-page{
