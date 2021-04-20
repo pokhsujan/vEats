@@ -257,8 +257,9 @@ body, span, a, p, div, body a, body span, body div, body p {
 	justify-content: center;
 	display: flex;
 }
-.place-item.layout-02 .place-title, {
-
+.place-item.layout-01 .place-title, .place-item.layout-02 .place-title, .place-item .place-title,
+.page .entry-content .home-featured .entry-head a{
+	font-weight: bold;
 }
 
 @media only screen and (min-width: 641px) {
