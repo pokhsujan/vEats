@@ -213,8 +213,8 @@ body, span, a, p, div, body a, body span, body div, body p {
 	z-index: 1;
 	left: auto;
 	background: #52de97;
-	width: 35px;
-	height: 35px;
+	width: 45px;
+	height: 45px;
 	border-radius: 50%;
 	justify-content: center;
 	text-align: center;
@@ -242,7 +242,7 @@ body, span, a, p, div, body a, body span, body div, body p {
 	padding: 11px 25px 10px 34px;
 }
 .left-header .block-search.search-input .icon-search{
-	right: 10px;
+	right: 0;
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
