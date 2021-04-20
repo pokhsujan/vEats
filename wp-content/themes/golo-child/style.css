@@ -261,6 +261,13 @@ body, span, a, p, div, body a, body span, body div, body p {
 .page .entry-content .home-featured .entry-head a{
 	font-weight: bold;
 }
+.popup-account .head-popup .addon-login .google-login{
+	vert-align: top;
+}
+
+.golo-page-title.layout-01 .entry-detail{
+	background-color: #52de97 !important;
+}
 
 @media only screen and (min-width: 641px) {
 	.place-title.single-listing-page{
