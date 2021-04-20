@@ -11,10 +11,15 @@ Tags: child theme, custom theme, bootstrap
 
 /* adding child styles */
 
-.elementor-place-search .block-search.layout-02 .location-field .icon-search{
-	background: #ff912c;
+body, span, a, p, div, body a, body span, body div, body p {
+	font-family: "Nimbus Sans";
+	font-weight: normal;
+	font-size: 15px;
 }
 
+.place-title a{
+	font-weight: bold;
+}
 .place-item .book-icon-place{
 	line-height: 0;
 	position: absolute;
@@ -131,10 +136,10 @@ Tags: child theme, custom theme, bootstrap
 
 .content-new-listing .place-manager-form .form-group .form-control, .content-new-listing .place-manager-form .group-field .form-control{
 	height: 40px;
-	border-top: 1px solid #23d3d3;
-	border-left: 1px solid #23d3d3;
-	border-right: 1px solid #23d3d3;
-	border-bottom: 1px solid #23d3d3;
+	/*border-top: 1px solid #23d3d3;*/
+	/*border-left: 1px solid #23d3d3;*/
+	/*border-right: 1px solid #23d3d3;*/
+	/*border-bottom: 1px solid #23d3d3;*/
 	padding-left: 10px;
 	padding-top: 5px;
 }
@@ -172,7 +177,7 @@ Tags: child theme, custom theme, bootstrap
 	float: right;
 }
 
-
+/*site colo scheme */
 .this-is-background{
 	background-color: #003337;
 	color: #D6FFCC;
@@ -185,25 +190,67 @@ Tags: child theme, custom theme, bootstrap
 	background-color: #52DE97;
 }
 
+
 .place-additional.single-place .gl-button, .orderup-link .gl-button,
-.site-header .golo-button a, .golo-button a, body .golo-button a,
+.site-header .golo-button a, .golo-button a,
 .wpcf7-submit, .wpcf7-form .wpcf7-submit{
-	background-color: #ff912c;
-	border-color: #ff912c
+	background-color: #52de97;
+	border-color: #52de97
 }
 
 .place-additional.single-place .gl-button:hover, .orderup-link .gl-button:hover,
-.wpcf7-form .wpcf7-submit:hover{
-	background-color: #52DE97;
-	border-color: #52DE97;
+.wpcf7-form .wpcf7-submit:hover, body .golo-button a:hover{
+	background-color: #003337;
+	border-color: #003337;
 	color: #ffffff;
 }
-.block-search.layout-02 .location-field .icon-search, .place-item.layout-02 .home-featured .place-featured{
-	background-color: #ff912c;
+.block-search.layout-02 .location-field .icon-search, .place-item.layout-02 .home-featured .place-featured,
+.elementor-place-search .block-search.layout-02 .location-field .icon-search{
+	background-color: #52de97;
 }
 
+.elementor-place-search .block-search.layout-01 .area-search .icon-search {
+	z-index: 1;
+	left: auto;
+	background: #52de97;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	justify-content: center;
+	text-align: center;
+	right: 10px;
+	display: flex;
+	color: #ffffff;
+	align-items: center;
+}
 .elementor-align-center.become-our-partner .elementor-button{
 	width: 30%;
+}
+
+.site-header .mb-menu.canvas-menu .la-bars{
+	font-size: 32px;
+}
+
+.orderup-link .gl-button{
+	padding: 13px 30px;
+	font-size: 18px;
+	border-radius: 25px;
+}
+.left-header .block-search.search-input .input-search{
+	border: 1px solid #d8d8d8;
+	border-radius: 15px;
+	padding: 11px 25px 10px 34px;
+}
+.left-header .block-search.search-input .icon-search{
+	right: 10px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	background-color: #52de97;
+	align-items: center;
+	justify-content: center;
+	display: flex;
 }
 
 @media only screen and (min-width: 641px) {
@@ -227,6 +274,8 @@ Tags: child theme, custom theme, bootstrap
 	}
 }
 
+
+/*media style for max size 520*/
 @media only screen and (max-width: 520px) {
 	.home .truong .elementor-widget-golo-heading.offset-item .elementor-widget-container {
 		margin-top: 15px;

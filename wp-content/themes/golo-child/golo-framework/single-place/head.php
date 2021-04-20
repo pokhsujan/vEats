@@ -56,7 +56,7 @@ if( $place_city ) {
             if (isset($place_meta_data[$meta_prefix . 'order-up-link']) && !empty($place_meta_data[$meta_prefix . 'order-up-link'])) {
                 $Orderurl = $place_meta_data[$meta_prefix . 'order-up-link'][0];
                 ?>
-                <div class="orderup-link"><a class="btn gl-button" href="<?= $Orderurl; ?>">Order</a> </div>
+                <div class="orderup-link"><a class="btn gl-button" href="<?= $Orderurl; ?>">Order Now</a> </div>
                 <?php
             }
             ?>

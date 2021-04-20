@@ -12,6 +12,7 @@ if (!function_exists('golo_child_enqueue_scripts')) {
 
     function golo_child_enqueue_scripts()
     {
+        wp_enqueue_style('golo_child-fonts', trailingslashit(get_stylesheet_directory_uri()) . 'assets/css/child-fonts.css');
         wp_enqueue_style('golo_child-style', trailingslashit(get_stylesheet_directory_uri()) . 'style.css');
         wp_enqueue_script('golo_child-script', trailingslashit(get_stylesheet_directory_uri()) . 'script.js', array('jquery'), null, true);
 
@@ -93,6 +94,9 @@ function veats_customise_text($translated_text, $text, $domain)
         case "Add place":
             $translated_text = __('Add Listing', 'golo-framework');
             break;
+        case "Type a city or location":
+            $translated_text = __('Search City or Restaurant', 'golo-framework');
+            break;
     }
     return $translated_text;
 }
@@ -118,6 +122,14 @@ function format_display($value, $bool = false)
     echo '</pre>';
     if ($bool) die('_ END _');
 }
+
+//adding shortcode for elementor
+function veats_search_from_cities(){
+    ob_start();?>
+    <?php
+    echo ob_get_clean();
+}
+
 
 //increase file upload size
 @ini_set( 'upload_max_size' , '32M' );

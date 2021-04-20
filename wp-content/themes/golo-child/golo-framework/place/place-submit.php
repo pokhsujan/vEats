@@ -44,7 +44,7 @@ if (!is_array($hide_place_group_fields)) {
         $action = 'add_place';
         ?>
 
-        <h2><?php esc_html_e('Add new Listing', 'golo-framework'); ?></h2>
+        <h2><?php esc_html_e('List Your Restaurant', 'golo-framework'); ?></h2>
         <div class="row">
             <div class="col-md-8">
                 <form action="#" method="post" id="submit_place_form" class="place-manager-form" enctype="multipart/form-data" data-titleerror="<?php echo esc_html__('Please enter place name', 'golo-framework'); ?>" data-deserror="<?php echo esc_html__('Please enter place description', 'golo-framework'); ?>" data-caterror="<?php echo esc_html__('Please choosen category', 'golo-framework'); ?>" data-typeerror="<?php echo esc_html__('Please choosen type', 'golo-framework'); ?>" data-maperror="<?php echo esc_html__('Please enter place address', 'golo-framework'); ?>" data-imgerror="<?php echo esc_html__('Please upload featured image', 'golo-framework'); ?>">
@@ -160,7 +160,7 @@ if (!is_array($hide_place_group_fields)) {
             </div>
             <div class="col-md-4">
                 <div class="desc-image-holder">
-                    <img src="<?=get_stylesheet_directory_uri();?>/uploads/images/connect.jpg">
+                    <img src="<?=get_stylesheet_directory_uri();?>/assets/images/connect.jpg">
                 </div>
             </div>
         </div>
@@ -173,21 +173,21 @@ if (!is_array($hide_place_group_fields)) {
 <!--                <div class="col-md-4">-->
 <!--                    <div class="partner-inner">-->
 <!--                        <p><b>Increase Booking</b></p>-->
-<!--                        <img src="--><?//=get_stylesheet_directory_uri();?><!--/uploads/images/mobile-payment-2.png" class="booking-icons">-->
+<!--                        <img src="--><?//=get_stylesheet_directory_uri();?><!--/assets/images/mobile-payment-2.png" class="booking-icons">-->
 <!--                        <p>Join a well-oiled marketing machine and watch the orders come in through your door and online.</p>-->
 <!--                    </div>-->
 <!--                </div>-->
 <!--                <div class="col-md-4">-->
 <!--                    <div class="partner-inner">-->
 <!--                        <p><b>Increase takeaway orders</b></p>-->
-<!--                        <img src="--><?//=get_stylesheet_directory_uri();?><!--/uploads/images/delivery.png" class="booking-icons">-->
+<!--                        <img src="--><?//=get_stylesheet_directory_uri();?><!--/assets/images/delivery.png" class="booking-icons">-->
 <!--                        <p>Join a well-oiled marketing machine and watch the orders come in through your door and online.</p>-->
 <!--                    </div>-->
 <!--                </div>-->
 <!--                <div class="col-md-4">-->
 <!--                    <div class="partner-inner">-->
 <!--                        <p><b>Reach new growing audiences</b></p>-->
-<!--                        <img src="--><?//=get_stylesheet_directory_uri();?><!--/uploads/images/images.png" class="booking-icons">-->
+<!--                        <img src="--><?//=get_stylesheet_directory_uri();?><!--/assets/images/images.png" class="booking-icons">-->
 <!--                        <p>Join a well-oiled marketing machine and watch the orders come in through your door and online.</p>-->
 <!--                    </div>-->
 <!--                </div>-->

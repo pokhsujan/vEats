@@ -9,6 +9,7 @@ wp-config.php
 sitemap.xml
 sitemap.xml.gz
  
+
 # Files in the root.
 #.pdf
 #.jpg
@@ -17,7 +18,7 @@ sitemap.xml.gz
 #.txt
 #.csv
 
- 
+
 # WP dirs.
 # wp-admin
 # wp-includes
