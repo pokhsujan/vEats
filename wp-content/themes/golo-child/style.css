@@ -241,10 +241,15 @@ body, span, a, p, div, body a, body span, body div, body p {
 	border-radius: 15px;
 	padding: 11px 25px 10px 34px;
 }
+
+.left-header .block-search.search-input .input-search{
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
 .left-header .block-search.search-input .icon-search{
-	right: 10px;
-	width: 40px;
-	height: 40px;
+	right: 0px;
+	width: 43px;
+	height: 43px;
 	border-radius: 50%;
 	color: #ffffff;
 	background-color: #52de97;
