@@ -295,3 +295,11 @@ body, span, a, p, div, body a, body span, body div, body p {
 		padding: 0% 0% 20% 0%;
 	}
 }
+
+@media only screen and (max-width: 1024px) {
+	.canvas-search .search-form .icon-search{
+		background-color: #52de97;
+		right: 1px;
+		color: #ffffff;
+	}
+}
