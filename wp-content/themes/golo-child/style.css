@@ -16,7 +16,8 @@ body, span, a, p, div, body a, body span, body div, body p {
 	font-weight: normal;
 	font-size: 15px;
 }
-.heading-description a, .heading-description p{
+.heading-description a, .heading-description , .elementor-heading-title a, .elementor-heading-title p{
+	font-family: inherit;
 	font-weight: inherit;
 	font-size: inherit;
 }
