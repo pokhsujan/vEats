@@ -27,6 +27,10 @@ body, span, a, p, div, body a, body span, body div, body p {
 	font-size: 17px;
 }
 
+.golo-page-title.layout-01 .entry-detail{
+	background-color: #52de97 !important;
+}
+
 
 .place-title a{
 	font-weight: bold;
