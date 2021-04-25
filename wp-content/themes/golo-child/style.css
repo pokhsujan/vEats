@@ -17,7 +17,7 @@ body, span, a, p, div, body a, body span, body div, body p {
 	font-size: 15px;
 }
 .heading-description a, .heading-description p, .elementor-heading-title a,
-.elementor-heading-title p, .elementor-heading-title span{
+.elementor-heading-title p, .elementor-heading-title span, .elementor-button span{
 	font-family: inherit;
 	font-weight: inherit;
 	font-size: inherit;
