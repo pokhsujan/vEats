@@ -16,11 +16,17 @@ body, span, a, p, div, body a, body span, body div, body p {
 	font-weight: normal;
 	font-size: 15px;
 }
-.heading-description a, .heading-description , .elementor-heading-title a, .elementor-heading-title p{
+.heading-description a, .heading-description p, .elementor-heading-title a,
+.elementor-heading-title p, .elementor-heading-title span{
 	font-family: inherit;
 	font-weight: inherit;
 	font-size: inherit;
 }
+
+.section-partner p{
+	font-size: 17px;
+}
+
 
 .place-title a{
 	font-weight: bold;
