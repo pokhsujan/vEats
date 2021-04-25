@@ -16,6 +16,10 @@ body, span, a, p, div, body a, body span, body div, body p {
 	font-weight: normal;
 	font-size: 15px;
 }
+.heading-description a, .heading-description p{
+	font-weight: inherit;
+	font-size: inherit;
+}
 
 .place-title a{
 	font-weight: bold;
@@ -213,8 +217,8 @@ body, span, a, p, div, body a, body span, body div, body p {
 	z-index: 1;
 	left: auto;
 	background: #52de97;
-	width: 45px;
-	height: 45px;
+	width: 35px;
+	height: 35px;
 	border-radius: 50%;
 	justify-content: center;
 	text-align: center;
@@ -241,16 +245,32 @@ body, span, a, p, div, body a, body span, body div, body p {
 	border-radius: 15px;
 	padding: 11px 25px 10px 34px;
 }
+
+.left-header .block-search.search-input .input-search{
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
 .left-header .block-search.search-input .icon-search{
-	right: 0;
-	width: 40px;
-	height: 40px;
+	right: 0px;
+	width: 43px;
+	height: 43px;
 	border-radius: 50%;
 	color: #ffffff;
 	background-color: #52de97;
 	align-items: center;
 	justify-content: center;
 	display: flex;
+}
+.place-item.layout-01 .place-title, .place-item.layout-02 .place-title, .place-item .place-title,
+.page .entry-content .home-featured .entry-head a{
+	font-weight: bold;
+}
+.popup-account .head-popup .addon-login .google-login{
+	vert-align: top;
+}
+
+.golo-page-title.layout-01 .entry-detail{
+	background-color: #52de97 !important;
 }
 
 @media only screen and (min-width: 641px) {
@@ -288,5 +308,13 @@ body, span, a, p, div, body a, body span, body div, body p {
 	}
 	.home .elementor-element.search-cities .elementor-widget-wrap .elementor-widget-container{
 		padding: 0% 0% 20% 0%;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.canvas-search .search-form .icon-search{
+		background-color: #52de97;
+		right: 1px;
+		color: #ffffff;
 	}
 }

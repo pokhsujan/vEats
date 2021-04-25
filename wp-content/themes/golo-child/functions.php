@@ -97,6 +97,9 @@ function veats_customise_text($translated_text, $text, $domain)
         case "Type a city or location":
             $translated_text = __('Search City or Restaurant', 'golo-framework');
             break;
+        case "Please check your form booking":
+            $translated_text = __('Please fill all the required fields.', 'golo-framework');
+            break;
     }
     return $translated_text;
 }
@@ -122,6 +125,7 @@ function format_display($value, $bool = false)
     echo '</pre>';
     if ($bool) die('_ END _');
 }
+
 
 //adding shortcode for elementor
 function veats_search_from_cities(){
