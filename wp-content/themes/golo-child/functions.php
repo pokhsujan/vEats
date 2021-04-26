@@ -65,15 +65,18 @@ function veats_edit_wishlist_listing($template_name, $template_path, $located, $
         if( $placeId != $args['place_id'] ){
             $place_meta_data = get_post_custom($args['place_id']);
             $meta_prefix = GOLO_METABOX_PREFIX;
-            $Orderurl = 'javascript:void(0);';
-            if (isset($place_meta_data[$meta_prefix . 'order-up-link']) && !empty($place_meta_data[$meta_prefix . 'order-up-link'])) {
-                $Orderurl = $place_meta_data[$meta_prefix . 'order-up-link'][0];
-            }
+//            $Orderurl = 'javascript:void(0);';
+//            if (isset($place_meta_data[$meta_prefix . 'order-up-link']) && !empty($place_meta_data[$meta_prefix . 'order-up-link'])) {
+//                $Orderurl = $place_meta_data[$meta_prefix . 'order-up-link'][0];
+//            }
 
             if ($template_name == 'place/wishlist.php') {
-                ?>
-                <a href="<?= $Orderurl; ?>" class="book-icon-place"><i class="fas fa-utensils"></i></a>
+                if (isset($place_meta_data[$meta_prefix . 'order-up-link']) && !empty($place_meta_data[$meta_prefix . 'order-up-link'])) {
+                    $Orderurl = $place_meta_data[$meta_prefix . 'order-up-link'][0];
+                    ?>
+                    <a href="<?= $Orderurl; ?>" class="book-icon-place"><i class="fas fa-utensils"></i></a>
                 <?php
+                }
             }
         }
     }
