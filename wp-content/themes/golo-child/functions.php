@@ -84,7 +84,7 @@ function veats_edit_wishlist_listing($template_name, $template_path, $located, $
 }
 //golo_single_place_after
 
-add_action('golo_layout_wrapper_end', 'testing_claim', 15);
+//add_action('golo_layout_wrapper_end', 'testing_claim', 15);
 function testing_claim(){
     ob_start();
     ?>
