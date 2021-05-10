@@ -280,6 +280,16 @@ body, span, a, p, div, body a, body span, body div, body p {
 	background-color: #52de97 !important;
 }
 
+.claim-listing-wrapper{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.claim-listing-wrapper .claim-listing{
+	width: 50%;
+	display: inline-block;
+}
+
 @media only screen and (min-width: 641px) {
 	.place-title.single-listing-page{
 		position: relative;

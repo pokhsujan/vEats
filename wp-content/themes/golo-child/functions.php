@@ -82,6 +82,18 @@ function veats_edit_wishlist_listing($template_name, $template_path, $located, $
     }
 
 }
+//golo_single_place_after
+
+//add_action('golo_layout_wrapper_end', 'testing_claim', 15);
+function testing_claim(){
+    ob_start();
+    ?>
+    <div class="yellooo">
+        hello heleloo
+    </div>
+    <?php
+    echo ob_get_clean();
+}
 
 
 /* Change Text Site Wide */
@@ -100,8 +112,17 @@ function veats_customise_text($translated_text, $text, $domain)
         case "Type a city or location":
             $translated_text = __('Search City or Restaurant', 'golo-framework');
             break;
+        case "You won't be charged yet":
+            $translated_text = __('', 'golo-framework');
+            break;
         case "Please check your form booking":
             $translated_text = __('Please fill all the required fields.', 'golo-framework');
+            break;
+        case "Request a book":
+            $translated_text = __('Submit', 'golo-framework');
+            break;
+        case "Request a book":
+            $translated_text = __('Submit', 'golo-framework');
             break;
     }
     return $translated_text;
