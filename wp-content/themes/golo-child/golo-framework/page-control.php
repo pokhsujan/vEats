@@ -9,6 +9,16 @@ get_header();
 
 $mainClass = "page-control";
 $layoutClass = "site-layout";
+
+//echo " yo herr ta";
+//global $wp_query;
+//$post6 = $wp_query->get_queried_object();
+//print_r($post6);
+//echo "<hr>";
+//
+//echo " yo pani herr ta";
+//echo get_post_field( 'post_name', get_post() );
+
 if( is_page('new-place') ){
     $mainClass = "content-page";
     $layoutClass = "container form-page";

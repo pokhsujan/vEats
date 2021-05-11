@@ -75,8 +75,12 @@ body, span, a, p, div, body a, body span, body div, body p {
 	padding: 20px;
 }
 
-.form-page .place-manager-form .form-group .form-control, .form-page .place-manager-form .form-group .chosen-choices,
-.form-page  .place-manager-form .form-group.form-select .select2 .select2-selection /*.golo-my-profile .form-group input.form-control*/
+.form-page .place-manager-form .form-group .form-control,
+.form-page .place-manager-form .form-group .chosen-choices,
+.form-page  .place-manager-form .form-group.form-select .select2 .select2-selection,
+.golo-form-content .place-manager-form .form-group .form-control,
+.golo-form-content .place-manager-form .form-group .chosen-choices,
+.golo-form-content  .place-manager-form .form-group.form-select .select2 .select2-selection
 {
 	display: block;
 	width: 100%;
@@ -94,7 +98,10 @@ body, span, a, p, div, body a, body span, body div, body p {
 
 .form-page  .place-manager-form .form-group.form-select .select2 .select2-selection,
 .form-page  .place-manager-form .form-group.form-select .select2 .select2-selection--multiple,
-.become-partner .form-holder{
+.become-partner .form-holder,
+.golo-form-content  .place-manager-form .form-group.form-select .select2 .select2-selection,
+.golo-form-content  .place-manager-form .form-group.form-select .select2 .select2-selection--multiple
+{
 	clear: both;
 	overflow: hidden;
 }
@@ -147,13 +154,15 @@ body, span, a, p, div, body a, body span, body div, body p {
 
 .content-new-listing .place-manager-form .form-group .form-control, .content-new-listing .place-manager-form .group-field .form-control{
 	height: 40px;
-	/*border-top: 1px solid #23d3d3;*/
-	/*border-left: 1px solid #23d3d3;*/
-	/*border-right: 1px solid #23d3d3;*/
-	/*border-bottom: 1px solid #23d3d3;*/
 	padding-left: 10px;
 	padding-top: 5px;
 }
+/*just above*/
+/*border-top: 1px solid #23d3d3;*/
+/*border-left: 1px solid #23d3d3;*/
+/*border-right: 1px solid #23d3d3;*/
+/*border-bottom: 1px solid #23d3d3;*/
+/*just above*/
 
 .golo-form-content .desc-image-holder{
 	-webkit-clip-path: polygon(0 25%, 88% 0, 100% 104%, 9% 80%);
@@ -288,6 +297,15 @@ body, span, a, p, div, body a, body span, body div, body p {
 .claim-listing-wrapper .claim-listing{
 	width: 50%;
 	display: inline-block;
+}
+
+.inherit-style p{
+	font-family: inherit;
+	font-size: inherit;
+}
+
+.claim-listing-wrapper .claim-listing{
+	font-size: 17px;
 }
 
 @media only screen and (min-width: 641px) {

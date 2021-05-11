@@ -17,8 +17,8 @@ global $place_data, $place_meta_data, $hide_place_fields;
                     case 'text':
                         ?>
                         <div class="form-group">
-                            <div class="place-fields-title"><h3><?php echo esc_html($field['title']); ?></h3></div>
-                            <input type="text" id="<?php echo esc_attr($field['id']); ?>" class="form-control" name="<?php echo esc_attr($field['id']); ?>" value="" placeholder="<?php esc_attr_e('Your Value', 'golo-framework'); ?>">
+<!--                            <div class="place-fields-title"><h3>--><?php //echo esc_html($field['title']); ?><!--</h3></div>-->
+                            <input type="text" id="<?php echo esc_attr($field['id']); ?>" class="form-control" name="<?php echo esc_attr($field['id']); ?>" value="" placeholder="<?php echo esc_html($field['title']); ?>">
                         </div>
                         <?php
                         break;
